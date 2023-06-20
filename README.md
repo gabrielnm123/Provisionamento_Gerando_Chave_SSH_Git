@@ -1,4 +1,4 @@
-# Provisionamento_Gerando_Chave_SSH_Git :closed_lock_with_key: :octocat:
+# Provisionamento_Gerando_Chave_SSH_Git :closed_lock_with_key:
 
 ## Instalação automática
 
