@@ -1,5 +1,3 @@
-#!/bin/bash
-
 sudo apt update && sudo apt install -y curl figlet ssh
 clear
 curl -O -J http://www.figlet.org/fonts/cyberlarge.flf > /dev/null 2>&1
