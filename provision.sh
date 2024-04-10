@@ -2,7 +2,7 @@ sudo apt update && sudo apt install -y curl ssh
 clear
 echo "Chave SSH Git"
 echo
-echo -n "mEmail da sua conta GitHub: "
+echo -n "Email da sua conta GitHub: "
 read email
 echo
 ssh-keygen -t ed25519 -C $email
