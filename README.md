@@ -3,5 +3,5 @@
 ## Instalação automática
 
 ``` bash
-curl https://raw.githubusercontent.com/gabrielnm123/Provisionamento_Gerando_Chave_SSH_Git/main/provision.sh | $SHELL
+curl https://raw.githubusercontent.com/gabrielnm123/Provisionamento_Gerando_Chave_SSH_Git/main/provision.sh | sudo -E bash
 ```
