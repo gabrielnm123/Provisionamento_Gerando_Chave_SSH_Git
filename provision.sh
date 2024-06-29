@@ -2,7 +2,6 @@
 
 apt update && apt install -y curl ssh
 clear
-clear
 echo "Chave SSH Git"
 echo
 echo -n "Email da sua conta GitHub: "
