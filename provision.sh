@@ -1,11 +1,19 @@
 #!/bin/bash
 
-sudo apt update && sudo apt install -y curl ssh
-clear
-ssh-keygen -t ed25519
+# Variável para o e-mail do GitHub
+read -p "Digite seu e-mail do GitHub: " email
+
+# Gerar uma nova chave SSH
+ssh-keygen -t ed25519 -C "$email"
+
+# Iniciar o agente SSH
 eval "$(ssh-agent -s)"
+
+# Adicionar a chave privada gerada ao agente SSH
 ssh-add ~/.ssh/id_ed25519
-echo "Copie o texto abaixo para adiciona-lá na plataforma: "
-echo
+
+# Exibir a chave pública gerada para facilitar a adição ao GitHub
+echo "Sua chave SSH pública é:"
 cat ~/.ssh/id_ed25519.pub
-echo
+
+echo "Copie a chave acima e adicione ao seu GitHub em https://github.com/settings/keys"
