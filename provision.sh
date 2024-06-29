@@ -1,12 +1,7 @@
 #!/bin/bash
 
-# Parte que precisa de sudo
-sudo bash -c '
 apt update && apt install -y curl ssh
 clear
-'
-
-# Parte que precisa de interação do usuário
 clear
 echo "Chave SSH Git"
 echo
