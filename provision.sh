@@ -1,6 +1,6 @@
 #!/bin/bash
 
-apt update && apt install -y curl ssh
+sudo apt update && sudo apt install -y curl ssh
 clear
 ssh-keygen -t ed25519
 eval "$(ssh-agent -s)"
