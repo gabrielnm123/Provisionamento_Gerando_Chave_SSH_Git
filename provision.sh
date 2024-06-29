@@ -1,4 +1,4 @@
-sudo apt update && sudo apt install -y curl ssh
+apt update && apt install -y curl ssh
 clear
 echo "Chave SSH Git"
 echo
@@ -7,7 +7,7 @@ read email
 echo
 ssh-keygen -t ed25519 -C $email
 eval "$(ssh-agent -s)"
-sudo ssh-add ~/.ssh/id_ed25519.pub 
+ssh-add ~/.ssh/id_ed25519.pub 
 echo
 echo "Copie o texto abaixo para adiciona-lá na plataforma: "
 echo
